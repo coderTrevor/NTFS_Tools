@@ -1,0 +1,9 @@
+/*
+* PROJECT:        ReactOS GSoC 2016 NTFS Bonus Code
+* LICENSE:        GNU GPLv2 only as published by the Free Software Foundation
+* PURPOSE:        Various
+* PROGRAMMER:     Trevor Thompson
+*
+*/
+
+THIS CODE IS NOT INTENDED TO BE "PRODUCTION-READY" to say the least! It was made for my personal use with zero consideration for other human beings even looking at it, it will hurt you if you don't respect it as such! I'm releasing it because GSoC is about promoting open source. Use it with caution! Read it with compassion! ;)

@@ -1,0 +1,3057 @@
+
+div.Attribute0
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#Att0Legend
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.Attribute0 #Att0Legend
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.StdInfo1
+{
+	padding: 10px;
+	color: white;
+	background-color: #9966FF;
+	border: 1px solid purple;
+}
+#SILegend1
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #9966FF;
+	border: none;
+}
+div.StdInfo1 #SILegend1
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.AttHeader2
+{
+	padding: 10px;
+	color: white;
+	background-color: #CC0000;
+	border: 1px solid red;
+}
+#AttHeaderLegend2
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #CC0000;
+	border: none;
+}
+div.AttHeader2 #AttHeaderLegend2
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.Type3
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#TLegend3
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Type3 + #TLegend3
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Length4
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#LLegend4
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Length4 + #LLegend4
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NonRes5
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NRLEgend5
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NonRes5 + #NRLEgend5
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NameLength6
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NLLegend6
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NameLength6 + #NLLegend6
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NameOffset7
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NOLegend7
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NameOffset7 + #NOLegend7
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Flags8
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#FLegend8
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Flags8 + #FLegend8
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.id9
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#idLegend9
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.id9 + #idLegend9
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.length10
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#LLegend10
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.length10 + #LLegend10
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.AttrOffset11
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#AOLegend11
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.AttrOffset11 + #AOLegend11
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.IndexedFlag12
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#IFLegend12
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.IndexedFlag12 + #IFLegend12
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Padding13
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#PLegend13
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Padding13 + #PLegend13
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+
+div.STDINFOData14
+{
+	padding: 10px;
+	color: white;
+	background-color: #CC0000;
+	border: 1px solid red;
+}
+#SILegend14
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #CC0000;
+	border: none;
+}
+div.STDINFOData14 #SILegend14
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.CTime15
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#CTLegend15
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.CTime15 + #CTLegend15
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+
+
+
+div.Attribute1
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#Att1Legend
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.Attribute1 #Att1Legend
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.AttrFileName16
+{
+	padding: 10px;
+	color: white;
+	background-color: #9966FF;
+	border: 1px solid purple;
+}
+#AFNLegend16
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #9966FF;
+	border: none;
+}
+div.AttrFileName16 #AFNLegend16
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.AttHeader17
+{
+	padding: 10px;
+	color: white;
+	background-color: #CC0000;
+	border: 1px solid red;
+}
+#AttHeaderLegend17
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #CC0000;
+	border: none;
+}
+div.AttHeader17 #AttHeaderLegend17
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.Type18
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#TLegend18
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Type18 + #TLegend18
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Length19
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#LLegend19
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Length19 + #LLegend19
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NonRes20
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NRLEgend20
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NonRes20 + #NRLEgend20
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NameLength21
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NLLegend21
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NameLength21 + #NLLegend21
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NameOffset22
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NOLegend22
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NameOffset22 + #NOLegend22
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Flags23
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#FLegend23
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Flags23 + #FLegend23
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.id24
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#idLegend24
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.id24 + #idLegend24
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.length25
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#LLegend25
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.length25 + #LLegend25
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.AttrOffset26
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#AOLegend26
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.AttrOffset26 + #AOLegend26
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.IndexedFlag27
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#IFLegend27
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.IndexedFlag27 + #IFLegend27
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Padding28
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#PLegend28
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Padding28 + #PLegend28
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+
+div.FILE_NAMEData29
+{
+	padding: 10px;
+	color: white;
+	background-color: #CC0000;
+	border: 1px solid red;
+}
+#FNDLegend29
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #CC0000;
+	border: none;
+}
+div.FILE_NAMEData29 #FNDLegend29
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.ParentMft30
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#PMFTLegend30
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.ParentMft30 + #PMFTLegend30
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.FileCreate31
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#FCLegend31
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.FileCreate31 + #FCLegend31
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.FileMod32
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#FMLegend32
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.FileMod32 + #FMLegend32
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.MftMod33
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#MMLegend33
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.MftMod33 + #MMLegend33
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.FileAccess34
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#FATLegend34
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.FileAccess34 + #FATLegend34
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.AllocSize35
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#ASLegend35
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.AllocSize35 + #ASLegend35
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.AllocSize36
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#ASLegend36
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.AllocSize36 + #ASLegend36
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Flags37
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#FlLegend37
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Flags37 + #FlLegend37
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Reparse38
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#RLegend38
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Reparse38 + #RLegend38
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NameLength39
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NLLegend39
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NameLength39 + #NLLegend39
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NameSpace40
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NSLegend40
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NameSpace40 + #NSLegend40
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Name41
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NLegend41
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Name41 + #NLegend41
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+
+
+
+div.Attribute2
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#Att2Legend
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.Attribute2 #Att2Legend
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.AttrIndexRoot42
+{
+	padding: 10px;
+	color: white;
+	background-color: #9966FF;
+	border: 1px solid purple;
+}
+#AIRLegend42
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #9966FF;
+	border: none;
+}
+div.AttrIndexRoot42 #AIRLegend42
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.AttHeader43
+{
+	padding: 10px;
+	color: white;
+	background-color: #CC0000;
+	border: 1px solid red;
+}
+#AttHeaderLegend43
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #CC0000;
+	border: none;
+}
+div.AttHeader43 #AttHeaderLegend43
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.FileNameClass44
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#FNCLegend44
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.FileNameClass44 + #FNCLegend44
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Type45
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#TLegend45
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Type45 + #TLegend45
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Length46
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#LLegend46
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Length46 + #LLegend46
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NonRes47
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NRLEgend47
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NonRes47 + #NRLEgend47
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NameLength48
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NLLegend48
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NameLength48 + #NLLegend48
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NameOffset49
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NOLegend49
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NameOffset49 + #NOLegend49
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Flags50
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#FLegend50
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Flags50 + #FLegend50
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.id51
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#idLegend51
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.id51 + #idLegend51
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.length52
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#LLegend52
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.length52 + #LLegend52
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.AttrOffset53
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#AOLegend53
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.AttrOffset53 + #AOLegend53
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.IndexedFlag54
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#IFLegend54
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.IndexedFlag54 + #IFLegend54
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Padding55
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#PLegend55
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Padding55 + #PLegend55
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+
+div.INDEX_ROOTData56
+{
+	padding: 10px;
+	color: white;
+	background-color: #CC0000;
+	border: 1px solid red;
+}
+#IRLegend56
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #CC0000;
+	border: none;
+}
+div.INDEX_ROOTData56 #IRLegend56
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.AttrType57
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#ATLegend57
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.AttrType57 + #ATLegend57
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.CollationRule58
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#CRLegend58
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.CollationRule58 + #CRLegend58
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.BPIR59
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#BPIRLegend59
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.BPIR59 + #BPIRLegend59
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.CPIR60
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#CPIRLegend60
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.CPIR60 + #CPIRLegend60
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.INDEX_NODE_HEADER61
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#INHLegend61
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.INDEX_NODE_HEADER61 #INHLegend61
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.OFIE62
+{
+	padding: 10px;
+	color: black;
+	background-color: #99FF66;
+	border: 1px solid yellow;
+}
+#OFIELegend62
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #99FF66;
+	border: none;
+}
+div.OFIE62 + #OFIELegend62
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.TSIE63
+{
+	padding: 10px;
+	color: black;
+	background-color: #99FF66;
+	border: 1px solid yellow;
+}
+#TSIELegend63
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #99FF66;
+	border: none;
+}
+div.TSIE63 + #TSIELegend63
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.ASN64
+{
+	padding: 10px;
+	color: black;
+	background-color: #99FF66;
+	border: 1px solid yellow;
+}
+#ASNLegend64
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #99FF66;
+	border: none;
+}
+div.ASN64 + #ASNLegend64
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NLNF65
+{
+	padding: 10px;
+	color: black;
+	background-color: #99FF66;
+	border: 1px solid yellow;
+}
+#NLNFLegend65
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #99FF66;
+	border: none;
+}
+div.NLNF65 + #NLNFLegend65
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.INHP66
+{
+	padding: 10px;
+	color: black;
+	background-color: #99FF66;
+	border: 1px solid yellow;
+}
+#INHPLegend66
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #99FF66;
+	border: none;
+}
+div.INHP66 + #INHPLegend66
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+
+div.INDXNODES67
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#INDXNODESLegend67
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.INDXNODES67 #INDXNODESLegend67
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.IEN68
+{
+	padding: 10px;
+	color: black;
+	background-color: #99FF66;
+	border: 1px solid yellow;
+}
+#IENLegend68
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #99FF66;
+	border: none;
+}
+div.IEN68 #IENLegend68
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.IEFR69
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#IEFRLegend69
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.IEFR69 + #IEFRLegend69
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.LOIE70
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#LOIELegend70
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.LOIE70 + #LOIELegend70
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.LOS71
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#LOSLegend71
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.LOS71 + #LOSLegend71
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.FLG72
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#FLGLegend72
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.FLG72 + #FLGLegend72
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.VCN73
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#VCNLegend73
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.VCN73 + #VCNLegend73
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+
+div.IEN74
+{
+	padding: 10px;
+	color: black;
+	background-color: #99FF66;
+	border: 1px solid yellow;
+}
+#IENLegend74
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #99FF66;
+	border: none;
+}
+div.IEN74 #IENLegend74
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.IEFR75
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#IEFRLegend75
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.IEFR75 + #IEFRLegend75
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.LOIE76
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#LOIELegend76
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.LOIE76 + #LOIELegend76
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.LOS77
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#LOSLegend77
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.LOS77 + #LOSLegend77
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.FLG78
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#FLGLegend78
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.FLG78 + #FLGLegend78
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.STR79
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#STRLegend79
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.STR79 + #STRLegend79
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+div.AttrFileName80
+{
+	padding: 10px;
+	color: white;
+	background-color: #9966FF;
+	border: 1px solid purple;
+}
+#AFNLegend80
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #9966FF;
+	border: none;
+}
+div.AttrFileName80 #AFNLegend80
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.FILE_NAMEData81
+{
+	padding: 10px;
+	color: white;
+	background-color: #CC0000;
+	border: 1px solid red;
+}
+#FNDLegend81
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #CC0000;
+	border: none;
+}
+div.FILE_NAMEData81 #FNDLegend81
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.ParentMft82
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#PMFTLegend82
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.ParentMft82 + #PMFTLegend82
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.FileCreate83
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#FCLegend83
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.FileCreate83 + #FCLegend83
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.FileMod84
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#FMLegend84
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.FileMod84 + #FMLegend84
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.MftMod85
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#MMLegend85
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.MftMod85 + #MMLegend85
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.FileAccess86
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#FATLegend86
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.FileAccess86 + #FATLegend86
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.AllocSize87
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#ASLegend87
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.AllocSize87 + #ASLegend87
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.AllocSize88
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#ASLegend88
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.AllocSize88 + #ASLegend88
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Flags89
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#FlLegend89
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Flags89 + #FlLegend89
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Reparse90
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#RLegend90
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Reparse90 + #RLegend90
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NameLength91
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NLLegend91
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NameLength91 + #NLLegend91
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NameSpace92
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NSLegend92
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NameSpace92 + #NSLegend92
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Name93
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NLegend93
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Name93 + #NLegend93
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+div.Attribute3
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#Att3Legend
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.Attribute3 #Att3Legend
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.AttrIndexAllocation770
+{
+	padding: 10px;
+	color: white;
+	background-color: #9966FF;
+	border: 1px solid purple;
+}
+#AIALegend770
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #9966FF;
+	border: none;
+}
+div.AttrIndexAllocation770 #AIALegend770
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.AttHeader771
+{
+	padding: 10px;
+	color: white;
+	background-color: #CC0000;
+	border: 1px solid red;
+}
+#AttHeaderLegend771
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #CC0000;
+	border: none;
+}
+div.AttHeader771 #AttHeaderLegend771
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.FileNameClass772
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#FNCLegend772
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.FileNameClass772 + #FNCLegend772
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Type773
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#TLegend773
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Type773 + #TLegend773
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Length774
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#LLegend774
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Length774 + #LLegend774
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NonRes775
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NRLEgend775
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NonRes775 + #NRLEgend775
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NameLength776
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NLLegend776
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NameLength776 + #NLLegend776
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NameOffset777
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NOLegend777
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NameOffset777 + #NOLegend777
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Flags778
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#FLegend778
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Flags778 + #FLegend778
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.id779
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#idLegend779
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.id779 + #idLegend779
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.LowestVCN780
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#LVLegend780
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.LowestVCN780 + #LVLegend780
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.HighestVCN781
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#HVLegend781
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.HighestVCN781 + #HVLegend781
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.MappingPairsOffset782
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#MPOLegend782
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.MappingPairsOffset782 + #MPOLegend782
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.CompressionUnit783
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#CULegend783
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.CompressionUnit783 + #CULegend783
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Reserved784
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#RLegend784
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Reserved784 + #RLegend784
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.AllocSize785
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#ASLegend785
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.AllocSize785 + #ASLegend785
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.DataSize786
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#DSLegend786
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.DataSize786 + #DSLegend786
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.InitSize787
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#ISLegend787
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.InitSize787 + #ISLegend787
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+
+div.ATTR_INDEXData788
+{
+	padding: 10px;
+	color: white;
+	background-color: #CC0000;
+	border: 1px solid red;
+}
+#AILegend788
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #CC0000;
+	border: none;
+}
+div.ATTR_INDEXData788 #AILegend788
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.CTRLByte789
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#CBLegend789
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.CTRLByte789 + #CBLegend789
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.LengthBytes790
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#LBLegend790
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.LengthBytes790 + #LBLegend790
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.OffsetBytes791
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#OLegend791
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.OffsetBytes791 + #OLegend791
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+
+
+
+div.Attribute4
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#Att4Legend
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.Attribute4 #Att4Legend
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.AttrBitmap792
+{
+	padding: 10px;
+	color: white;
+	background-color: #9966FF;
+	border: 1px solid purple;
+}
+#ABLegend792
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #9966FF;
+	border: none;
+}
+div.AttrBitmap792 #ABLegend792
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.AttHeader793
+{
+	padding: 10px;
+	color: white;
+	background-color: #CC0000;
+	border: 1px solid red;
+}
+#AttHeaderLegend793
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #CC0000;
+	border: none;
+}
+div.AttHeader793 #AttHeaderLegend793
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.FileNameClass794
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#FNCLegend794
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.FileNameClass794 + #FNCLegend794
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Type795
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#TLegend795
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Type795 + #TLegend795
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Length796
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#LLegend796
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Length796 + #LLegend796
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NonRes797
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NRLEgend797
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NonRes797 + #NRLEgend797
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NameLength798
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NLLegend798
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NameLength798 + #NLLegend798
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NameOffset799
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NOLegend799
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NameOffset799 + #NOLegend799
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Flags800
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#FLegend800
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Flags800 + #FLegend800
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.id801
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#idLegend801
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.id801 + #idLegend801
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.length802
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#LLegend802
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.length802 + #LLegend802
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.AttrOffset803
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#AOLegend803
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.AttrOffset803 + #AOLegend803
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.IndexedFlag804
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#IFLegend804
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.IndexedFlag804 + #IFLegend804
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Padding805
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#PLegend805
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Padding805 + #PLegend805
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+
+
+div.FixupArray
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#FULegend
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.FixupArray + #FULegend
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+div.FixupSig
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#FSLegend
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.FixupSig + #FSLegend
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.FixupEntry0
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#FELegend0
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.FixupEntry0 + #FELegend0
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.FixupEntry1
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#FELegend1
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.FixupEntry1 + #FELegend1
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.FixupEntry2
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#FELegend2
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.FixupEntry2 + #FELegend2
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+

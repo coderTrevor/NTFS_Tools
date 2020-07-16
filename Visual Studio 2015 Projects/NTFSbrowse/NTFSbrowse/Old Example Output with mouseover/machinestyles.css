@@ -1,0 +1,2881 @@
+
+div.Attribute0:hover
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#Att0Legend
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.Attribute0:hover #Att0Legend
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.StdInfo1:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #9966FF;
+	border: 1px solid purple;
+}
+#SILegend1
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #9966FF;
+	border: none;
+}
+div.StdInfo1:hover #SILegend1
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.AttHeader2:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #CC0000;
+	border: 1px solid red;
+}
+#AttHeaderLegend2
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #CC0000;
+	border: none;
+}
+div.AttHeader2:hover #AttHeaderLegend2
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.Type3:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#TLegend3
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Type3:hover + #TLegend3
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Length4:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#LLegend4
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Length4:hover + #LLegend4
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NonRes5:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NRLEgend5
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NonRes5:hover + #NRLEgend5
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NameLength6:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NLLegend6
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NameLength6:hover + #NLLegend6
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NameOffset7:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NOLegend7
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NameOffset7:hover + #NOLegend7
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Flags8:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#FLegend8
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Flags8:hover + #FLegend8
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.id9:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#idLegend9
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.id9:hover + #idLegend9
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.length10:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#LLegend10
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.length10:hover + #LLegend10
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.AttrOffset11:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#AOLegend11
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.AttrOffset11:hover + #AOLegend11
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.IndexedFlag12:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#IFLegend12
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.IndexedFlag12:hover + #IFLegend12
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Padding13:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#PLegend13
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Padding13:hover + #PLegend13
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+
+div.STDINFOData14:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #CC0000;
+	border: 1px solid red;
+}
+#SILegend14
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #CC0000;
+	border: none;
+}
+div.STDINFOData14:hover #SILegend14
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.CTime15:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#CTLegend15
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.CTime15:hover + #CTLegend15
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+
+
+
+div.Attribute1:hover
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#Att1Legend
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.Attribute1:hover #Att1Legend
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.AttrFileName16:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #9966FF;
+	border: 1px solid purple;
+}
+#AFNLegend16
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #9966FF;
+	border: none;
+}
+div.AttrFileName16:hover #AFNLegend16
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.AttHeader17:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #CC0000;
+	border: 1px solid red;
+}
+#AttHeaderLegend17
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #CC0000;
+	border: none;
+}
+div.AttHeader17:hover #AttHeaderLegend17
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.Type18:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#TLegend18
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Type18:hover + #TLegend18
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Length19:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#LLegend19
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Length19:hover + #LLegend19
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NonRes20:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NRLEgend20
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NonRes20:hover + #NRLEgend20
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NameLength21:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NLLegend21
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NameLength21:hover + #NLLegend21
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NameOffset22:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NOLegend22
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NameOffset22:hover + #NOLegend22
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Flags23:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#FLegend23
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Flags23:hover + #FLegend23
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.id24:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#idLegend24
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.id24:hover + #idLegend24
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.length25:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#LLegend25
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.length25:hover + #LLegend25
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.AttrOffset26:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#AOLegend26
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.AttrOffset26:hover + #AOLegend26
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.IndexedFlag27:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#IFLegend27
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.IndexedFlag27:hover + #IFLegend27
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Padding28:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#PLegend28
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Padding28:hover + #PLegend28
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+
+div.FILE_NAMEData29:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #CC0000;
+	border: 1px solid red;
+}
+#FNDLegend29
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #CC0000;
+	border: none;
+}
+div.FILE_NAMEData29:hover #FNDLegend29
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.ParentMft30:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#PMFTLegend30
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.ParentMft30:hover + #PMFTLegend30
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.FileCreate31:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#FCLegend31
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.FileCreate31:hover + #FCLegend31
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.FileMod32:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#FMLegend32
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.FileMod32:hover + #FMLegend32
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.MftMod33:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#MMLegend33
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.MftMod33:hover + #MMLegend33
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.FileAccess34:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#FATLegend34
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.FileAccess34:hover + #FATLegend34
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.AllocSize35:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#ASLegend35
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.AllocSize35:hover + #ASLegend35
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.AllocSize36:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#ASLegend36
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.AllocSize36:hover + #ASLegend36
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Flags37:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#FlLegend37
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Flags37:hover + #FlLegend37
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Reparse38:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#RLegend38
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Reparse38:hover + #RLegend38
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NameLength39:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NLLegend39
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NameLength39:hover + #NLLegend39
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NameSpace40:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NSLegend40
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NameSpace40:hover + #NSLegend40
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Name41:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NLegend41
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Name41:hover + #NLegend41
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+
+
+
+div.Attribute2:hover
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#Att2Legend
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.Attribute2:hover #Att2Legend
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.AttrObjId42:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #9966FF;
+	border: 1px solid purple;
+}
+#AiLegend42
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #9966FF;
+	border: none;
+}
+div.AttrObjId42:hover #AiLegend42
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.AttHeader43:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #CC0000;
+	border: 1px solid red;
+}
+#AttHeaderLegend43
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #CC0000;
+	border: none;
+}
+div.AttHeader43:hover #AttHeaderLegend43
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.Type44:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#TLegend44
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Type44:hover + #TLegend44
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Length45:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#LLegend45
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Length45:hover + #LLegend45
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NonRes46:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NRLEgend46
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NonRes46:hover + #NRLEgend46
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NameLength47:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NLLegend47
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NameLength47:hover + #NLLegend47
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NameOffset48:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NOLegend48
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NameOffset48:hover + #NOLegend48
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Flags49:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#FLegend49
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Flags49:hover + #FLegend49
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.id50:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#idLegend50
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.id50:hover + #idLegend50
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.length51:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#LLegend51
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.length51:hover + #LLegend51
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.AttrOffset52:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#AOLegend52
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.AttrOffset52:hover + #AOLegend52
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.IndexedFlag53:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#IFLegend53
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.IndexedFlag53:hover + #IFLegend53
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Padding54:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#PLegend54
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Padding54:hover + #PLegend54
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+
+
+
+div.Attribute3:hover
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#Att3Legend
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.Attribute3:hover #Att3Legend
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.AttrIndexRoot55:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #9966FF;
+	border: 1px solid purple;
+}
+#AIRLegend55
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #9966FF;
+	border: none;
+}
+div.AttrIndexRoot55:hover #AIRLegend55
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.AttHeader56:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #CC0000;
+	border: 1px solid red;
+}
+#AttHeaderLegend56
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #CC0000;
+	border: none;
+}
+div.AttHeader56:hover #AttHeaderLegend56
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.FileNameClass57:hover
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#FNCLegend57
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.FileNameClass57:hover + #FNCLegend57
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Type58:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#TLegend58
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Type58:hover + #TLegend58
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Length59:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#LLegend59
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Length59:hover + #LLegend59
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NonRes60:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NRLEgend60
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NonRes60:hover + #NRLEgend60
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NameLength61:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NLLegend61
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NameLength61:hover + #NLLegend61
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NameOffset62:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NOLegend62
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NameOffset62:hover + #NOLegend62
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Flags63:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#FLegend63
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Flags63:hover + #FLegend63
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.id64:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#idLegend64
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.id64:hover + #idLegend64
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.length65:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#LLegend65
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.length65:hover + #LLegend65
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.AttrOffset66:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#AOLegend66
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.AttrOffset66:hover + #AOLegend66
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.IndexedFlag67:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#IFLegend67
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.IndexedFlag67:hover + #IFLegend67
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Padding68:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#PLegend68
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Padding68:hover + #PLegend68
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+
+div.INDEX_ROOTData69:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #CC0000;
+	border: 1px solid red;
+}
+#IRLegend69
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #CC0000;
+	border: none;
+}
+div.INDEX_ROOTData69:hover #IRLegend69
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.AttrType70:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#ATLegend70
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.AttrType70:hover + #ATLegend70
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.CollationRule71:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#CRLegend71
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.CollationRule71:hover + #CRLegend71
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.BPIR72:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#BPIRLegend72
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.BPIR72:hover + #BPIRLegend72
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.CPIR73:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#CPIRLegend73
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.CPIR73:hover + #CPIRLegend73
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+
+
+
+div.Attribute4:hover
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#Att4Legend
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.Attribute4:hover #Att4Legend
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.AttrIndexAllocation74:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #9966FF;
+	border: 1px solid purple;
+}
+#AIALegend74
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #9966FF;
+	border: none;
+}
+div.AttrIndexAllocation74:hover #AIALegend74
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.AttHeader75:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #CC0000;
+	border: 1px solid red;
+}
+#AttHeaderLegend75
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #CC0000;
+	border: none;
+}
+div.AttHeader75:hover #AttHeaderLegend75
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.FileNameClass76:hover
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#FNCLegend76
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.FileNameClass76:hover + #FNCLegend76
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Type77:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#TLegend77
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Type77:hover + #TLegend77
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Length78:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#LLegend78
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Length78:hover + #LLegend78
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NonRes79:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NRLEgend79
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NonRes79:hover + #NRLEgend79
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NameLength80:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NLLegend80
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NameLength80:hover + #NLLegend80
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NameOffset81:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NOLegend81
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NameOffset81:hover + #NOLegend81
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Flags82:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#FLegend82
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Flags82:hover + #FLegend82
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.id83:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#idLegend83
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.id83:hover + #idLegend83
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.LowestVCN84:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#LVLegend84
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.LowestVCN84:hover + #LVLegend84
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.HighestVCN85:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#HVLegend85
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.HighestVCN85:hover + #HVLegend85
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.MappingPairsOffset86:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#MPOLegend86
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.MappingPairsOffset86:hover + #MPOLegend86
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.CompressionUnit87:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#CULegend87
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.CompressionUnit87:hover + #CULegend87
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Reserved88:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#RLegend88
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Reserved88:hover + #RLegend88
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.AllocSize89:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#ASLegend89
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.AllocSize89:hover + #ASLegend89
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.DataSize90:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#DSLegend90
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.DataSize90:hover + #DSLegend90
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.InitSize91:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#ISLegend91
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.InitSize91:hover + #ISLegend91
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+
+
+
+div.Attribute5:hover
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#Att5Legend
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.Attribute5:hover #Att5Legend
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.AttrBitmap92:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #9966FF;
+	border: 1px solid purple;
+}
+#ABLegend92
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #9966FF;
+	border: none;
+}
+div.AttrBitmap92:hover #ABLegend92
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.AttHeader93:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #CC0000;
+	border: 1px solid red;
+}
+#AttHeaderLegend93
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #CC0000;
+	border: none;
+}
+div.AttHeader93:hover #AttHeaderLegend93
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.FileNameClass94:hover
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#FNCLegend94
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.FileNameClass94:hover + #FNCLegend94
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Type95:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#TLegend95
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Type95:hover + #TLegend95
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Length96:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#LLegend96
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Length96:hover + #LLegend96
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NonRes97:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NRLEgend97
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NonRes97:hover + #NRLEgend97
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NameLength98:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NLLegend98
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NameLength98:hover + #NLLegend98
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NameOffset99:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NOLegend99
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NameOffset99:hover + #NOLegend99
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Flags100:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#FLegend100
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Flags100:hover + #FLegend100
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.id101:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#idLegend101
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.id101:hover + #idLegend101
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.length102:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#LLegend102
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.length102:hover + #LLegend102
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.AttrOffset103:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#AOLegend103
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.AttrOffset103:hover + #AOLegend103
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.IndexedFlag104:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#IFLegend104
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.IndexedFlag104:hover + #IFLegend104
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Padding105:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#PLegend105
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Padding105:hover + #PLegend105
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+
+
+
+div.Attribute6:hover
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#Att6Legend
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.Attribute6:hover #Att6Legend
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.AttrLoggedUtility106:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #9966FF;
+	border: 1px solid purple;
+}
+#ALULegend106
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #9966FF;
+	border: none;
+}
+div.AttrLoggedUtility106:hover #ALULegend106
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.AttHeader107:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #CC0000;
+	border: 1px solid red;
+}
+#AttHeaderLegend107
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #CC0000;
+	border: none;
+}
+div.AttHeader107:hover #AttHeaderLegend107
+{
+	/*background-color: green;*/
+	display: block;
+}
+div.FileNameClass108:hover
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#FNCLegend108
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.FileNameClass108:hover + #FNCLegend108
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Type109:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#TLegend109
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Type109:hover + #TLegend109
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Length110:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#LLegend110
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Length110:hover + #LLegend110
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NonRes111:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NRLEgend111
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NonRes111:hover + #NRLEgend111
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NameLength112:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NLLegend112
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NameLength112:hover + #NLLegend112
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.NameOffset113:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#NOLegend113
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.NameOffset113:hover + #NOLegend113
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Flags114:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#FLegend114
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Flags114:hover + #FLegend114
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.id115:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#idLegend115
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.id115:hover + #idLegend115
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.length116:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#LLegend116
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.length116:hover + #LLegend116
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.AttrOffset117:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#AOLegend117
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.AttrOffset117:hover + #AOLegend117
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.IndexedFlag118:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#IFLegend118
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.IndexedFlag118:hover + #IFLegend118
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.Padding119:hover
+{
+	padding: 10px;
+	color: white;
+	background-color: #0000BB;
+	border: 1px solid blue;
+}
+#PLegend119
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: white;
+	background-color: #0000BB;
+	border: none;
+}
+div.Padding119:hover + #PLegend119
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+
+
+div.FixupArray:hover
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#FULegend
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.FixupArray:hover + #FULegend
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+div.FixupSig:hover
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#FSLegend
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.FixupSig:hover + #FSLegend
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.FixupEntry0:hover
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#FELegend0
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.FixupEntry0:hover + #FELegend0
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.FixupEntry1:hover
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#FELegend1
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.FixupEntry1:hover + #FELegend1
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
+div.FixupEntry2:hover
+{
+	padding: 10px;
+	color: black;
+	background-color: #33FF66;
+	border: 1px solid green;
+}
+#FELegend2
+{	display: none;
+	float: none;
+	padding: 5px;
+	margin: auto;
+	color: black;
+	background-color: #33FF66;
+	border: none;
+}
+div.FixupEntry2:hover + #FELegend2
+{
+	/*background-color: green;*/
+	display: inline-block;
+}
+
