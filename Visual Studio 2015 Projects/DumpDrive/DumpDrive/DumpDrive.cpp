@@ -13,9 +13,47 @@
 #include <stdarg.h>
 using namespace std;
 
+int GetMenuChoice(int numChoices, int defaultSelection, char *szChoices, ...);
+char *menuPrompt = NULL;
+int promptLines = 0;
 
+// Thank you cplusplus.com
+void ClearScreen()
+{
+    HANDLE                     hStdOut;
+    CONSOLE_SCREEN_BUFFER_INFO csbi;
+    DWORD                      count;
+    DWORD                      cellCount;
+    COORD                      homeCoords = { 0, promptLines };
 
+    hStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
+    if (hStdOut == INVALID_HANDLE_VALUE) return;
 
+    /* Get the number of cells in the current buffer */
+    if (!GetConsoleScreenBufferInfo(hStdOut, &csbi)) return;
+    cellCount = csbi.dwSize.X *csbi.dwSize.Y - (promptLines * csbi.dwSize.X);
+
+    /* Fill the entire buffer with spaces */
+    if (!FillConsoleOutputCharacter(
+        hStdOut,
+        (TCHAR) ' ',
+        cellCount,
+        homeCoords,
+        &count
+    )) return;
+
+    /* Fill the entire buffer with the current colors and attributes */
+    if (!FillConsoleOutputAttribute(
+        hStdOut,
+        csbi.wAttributes,
+        cellCount,
+        homeCoords,
+        &count
+    )) return;
+
+    /* Move the cursor home */
+    SetConsoleCursorPosition(hStdOut, homeCoords);
+}
 
 NTFS_VCB Vcb;
 MFTENTRY MasterFileTableMftEntry;
@@ -162,6 +200,168 @@ void AnyKey()
     }
 }
 
+int WipeDrive()
+{
+    {
+        cout << "Select drive to ERASE (Press esc to exit): ";
+
+        char driveLetter;
+        driveLetter = getch();               
+
+        if (driveLetter == 27)
+        {
+            cout << "\nA wise decision\n";
+            return 0;
+        }
+
+        if (driveLetter == 'c')
+        {
+            cout << "\nErase c:\\?!\nEven I'm not crazy enough to let you do that!\n";
+            return 0;
+        }
+
+        char pathName[7] = "\\\\.\\C:";
+        pathName[4] = driveLetter;
+
+        char driveName[5] = "R:\\";
+        driveName[0] = driveLetter;
+
+        ClearScreen();
+        promptLines = 3;
+
+        cout << "About to COMPLETELY ERASE " << driveName << "\nYou will lose all data on this drive and need to reformat if you continue!\n";
+        
+        cout << "You're totally sure you don't have any data on " << driveName << "?";
+        int choice = GetMenuChoice(5, 0, "Exit", "Exit", "!Yes - Wipe Drive completely!", "Exit", "Exit");
+
+        if (choice != 2)
+            return 0;
+
+        promptLines = 0;
+        ClearScreen();
+
+        promptLines = 2;
+        cout << "Last chance - Totally sure you want to erase " << driveName << " and reformat after this?\nThis a bad idea if you have important data on ANY of your drives!\n";
+        choice = GetMenuChoice(5, 4, "Exit", "Exit", "!Yes - Wipe Drive completely!", "Exit", "Exit");
+
+        if (choice != 2)
+            return 0;
+
+        // open up drive whatever:
+        HANDLE hDrive = CreateFileA(pathName, GENERIC_READ | GENERIC_WRITE, FILE_SHARE_READ | FILE_SHARE_WRITE, NULL, OPEN_EXISTING, 0, NULL);
+
+        if (hDrive == INVALID_HANDLE_VALUE)
+        {
+            cout << "Couldn't open drive\n";
+            return -1;
+        }
+
+        ULARGE_INTEGER DriveSize;
+        //GetFileSizeEx(hDrive, &DriveSize);
+
+        GetDiskFreeSpaceExA(driveName,
+                            NULL,
+                            &DriveSize,
+                            NULL);
+
+        cout << "Size: " << DriveSize.QuadPart / (1024 * 1024) << " megs\n";
+        cout << "Size: " << DriveSize.QuadPart / (1024 * 1024 * 1024) << " gigs\n";
+
+        /*OPENFILENAME ofn;
+
+        WCHAR szFileName[MAX_PATH] = L"";
+
+        ZeroMemory(&ofn, sizeof(ofn));
+
+        ofn.lStructSize = sizeof(ofn);
+        ofn.hwndOwner = NULL;
+        ofn.lpstrFilter = L"Bin Files (*.bin)\0*.bin\0All Files (*.*)\0*.*\0";
+        ofn.lpstrFile = szFileName;
+        ofn.nMaxFile = MAX_PATH;
+        ofn.Flags = OFN_EXPLORER | OFN_FILEMUSTEXIST | OFN_HIDEREADONLY;
+        ofn.lpstrDefExt = (LPCWSTR)L"bin";
+
+        if (!GetSaveFileName(&ofn))
+        {
+            cout << "User cancelled save dialog\n";
+            return 0;
+        }
+
+        HANDLE hFile = CreateFile(ofn.lpstrFile, GENERIC_WRITE, FILE_SHARE_WRITE, NULL, CREATE_ALWAYS, 0, NULL);
+        if (hFile == INVALID_HANDLE_VALUE)
+        {
+            cout << "Couldn't create ";
+            wcout << ofn.lpstrFile << L"\n";
+            return -1;
+        }
+
+        // Make the file sparse
+        FILE_SET_SPARSE_BUFFER sparseBuffer;
+        sparseBuffer.SetSparse = true;
+        DWORD bytesReturned;
+        BOOL returnValue = DeviceIoControl(hFile,
+                                           FSCTL_SET_SPARSE,
+                                           NULL,
+                                           0,
+                                           NULL,
+                                           0,
+                                           &bytesReturned,
+                                           NULL);
+
+        if (returnValue)
+            printf("Success\n");
+        else
+            printf("Failure\n");*/
+
+        // zero one meg at a time until almost done
+        LARGE_INTEGER BytesLeft;
+        BytesLeft.QuadPart = DriveSize.QuadPart;
+#define ONEMEG 1024 * 1024
+        BYTE *Buffer = (BYTE*)malloc(ONEMEG);
+        memset(Buffer, 0, ONEMEG);
+        DWORD BufferOffset = 0;
+        DWORD Written;
+        while (BytesLeft.QuadPart >= ONEMEG)
+        {
+            // read drive
+            /*if (!ReadFile(hDrive, Buffer, ONEMEG, &Read, NULL))
+            {
+                cout << "Failed to read drive!\n";
+                return -1;
+            }*/
+
+            if (!WriteFile(hDrive, Buffer, ONEMEG, &Written, NULL))
+            {
+                cout << "Unable to zero drive!\n";
+                return -1;
+            }
+
+            BytesLeft.QuadPart -= ONEMEG;
+            cout << (float)(DriveSize.QuadPart - BytesLeft.QuadPart) / DriveSize.QuadPart  * 100.0f << "%\n";
+        }
+
+        while (BytesLeft.QuadPart >= 512)
+        {
+            // zero drive
+            if (!WriteFile(hDrive, Buffer, 512, &Written, NULL))
+            {
+                cout << "Failed to zero drive!\n";
+                return -1;
+            }
+
+            BytesLeft.QuadPart -= 512;
+        }
+
+        cout << "Done!\n";
+
+        AnyKey();
+
+        CloseHandle(hDrive);
+
+        return 0;
+    }
+}
+
 int DumpDrive()
 {
     cout << "Select drive to open: ";
@@ -225,6 +425,24 @@ int DumpDrive()
         return -1;
     }
 
+    // Make the file sparse
+    FILE_SET_SPARSE_BUFFER sparseBuffer;
+    sparseBuffer.SetSparse = true;
+    DWORD bytesReturned;
+    BOOL returnValue = DeviceIoControl(hFile,
+                                           FSCTL_SET_SPARSE,
+                                           NULL,
+                                           0,
+                                           NULL,
+                                           0,
+                                           &bytesReturned,
+                                           NULL);
+    
+    if (returnValue)
+        printf("Success\n");
+    else
+        printf("Failure\n");
+
     // read one meg at a time until almost done
     LARGE_INTEGER BytesLeft;
     BytesLeft.QuadPart = DriveSize.QuadPart;
@@ -261,6 +479,156 @@ int DumpDrive()
         }
 
         if (!WriteFile(hFile, Buffer, 512, &Read, NULL))
+        {
+            cout << "Unable to update file!\n";
+            return -1;
+        }
+
+        BytesLeft.QuadPart -= 512;
+    }
+
+    cout << "Done!\n";
+
+    AnyKey();
+
+    CloseHandle(hFile);
+    CloseHandle(hDrive);
+
+    return 0;
+}
+
+int WriteImageToDrive()
+{
+    OPENFILENAME ofn;
+
+    WCHAR szFileName[MAX_PATH] = L"";
+
+    ZeroMemory(&ofn, sizeof(ofn));
+
+    ofn.lStructSize = sizeof(ofn);
+    ofn.hwndOwner = NULL;
+    ofn.lpstrFilter = L"Bin Files (*.bin)\0*.bin\0All Files (*.*)\0*.*\0";
+    ofn.lpstrFile = szFileName;
+    ofn.nMaxFile = MAX_PATH;
+    ofn.Flags = OFN_EXPLORER | OFN_FILEMUSTEXIST | OFN_HIDEREADONLY;
+    ofn.lpstrDefExt = (LPCWSTR)L"bin";
+
+    if(!GetOpenFileName(&ofn))
+    {
+        cout << "User cancelled open dialog\n";
+        return 0;
+    }
+
+    HANDLE hFile = CreateFile(ofn.lpstrFile, GENERIC_READ, FILE_SHARE_WRITE, NULL, OPEN_ALWAYS, 0, NULL);
+    if (hFile == INVALID_HANDLE_VALUE)
+    {
+        cout << "Couldn't create ";
+        wcout << ofn.lpstrFile << L"\n";
+        return -1;
+    }
+
+    cout << "Select drive to write an image to. This will of course OVERWRITE the contents (ESC to cancel): ";
+
+    char driveLetter;
+    driveLetter = getch();
+
+    if (driveLetter == 27)
+    {
+        cout << "\nA wise decision\n";
+        return 0;
+    }
+
+    if (driveLetter == 'c')
+    {
+        cout << "\nErase c:\\?!\nEven I'm not crazy enough to let you do that!\n";
+        return 0;
+    }
+
+    char pathName[7] = "\\\\.\\C:";
+    pathName[4] = driveLetter;
+
+    char driveName[5] = "R:\\";
+    driveName[0] = driveLetter;
+
+    ClearScreen();
+    promptLines = 3;
+
+    cout << "About to COMPLETELY OVERWRITE " << driveName << "\nYou will lose all data on this drive if you continue!\n";
+
+    cout << "You're totally sure you don't have any data on " << driveName << "?";
+    int choice = GetMenuChoice(5, 0, "Exit", "Exit", "!Yes - Wipe Drive completely!", "Exit", "Exit");
+
+    if (choice != 2)
+        return 0;
+
+    promptLines = 0;
+    ClearScreen();
+
+    promptLines = 2;
+    cout << "Last chance - Totally sure you want to erase " << driveName << "?\nThis a bad idea if you have important data on ANY of your drives!\n";
+    choice = GetMenuChoice(5, 4, "Exit", "Exit", "!Yes - Wipe Drive completely!", "Exit", "Exit");
+
+    if (choice != 2)
+        return 0;
+
+    // open up drive whatever:
+    HANDLE hDrive = CreateFileA(pathName, GENERIC_READ | GENERIC_WRITE, FILE_SHARE_READ | FILE_SHARE_WRITE, NULL, OPEN_EXISTING, 0, NULL);
+
+    if (hDrive == INVALID_HANDLE_VALUE)
+    {
+        cout << "Couldn't open drive\n";
+        return -1;
+    }
+
+    ULARGE_INTEGER DriveSize;
+    //GetFileSizeEx(hDrive, &DriveSize);
+
+    GetDiskFreeSpaceExA(driveName,
+                        NULL,
+                        &DriveSize,
+                        NULL);
+
+    cout << "Size: " << DriveSize.QuadPart / (1024 * 1024) << " megs\n";
+    cout << "Size: " << DriveSize.QuadPart / (1024 * 1024 * 1024) << " gigs\n";
+    
+
+
+    // write one meg at a time until almost done
+    LARGE_INTEGER BytesLeft;
+    BytesLeft.QuadPart = DriveSize.QuadPart;
+#define ONEMEG 1024 * 1024
+    BYTE *Buffer = (BYTE*)malloc(ONEMEG);
+    DWORD BufferOffset = 0;
+    DWORD Read;
+    while (BytesLeft.QuadPart >= ONEMEG)
+    {
+        // read file and write to drive
+        if (!ReadFile(hFile, Buffer, ONEMEG, &Read, NULL))
+        {
+            cout << "Failed to read image file!\n";
+            return -1;
+        }
+
+        if (!WriteFile(hDrive, Buffer, ONEMEG, &Read, NULL))
+        {
+            cout << "Unable to write to file!\n";
+            return -1;
+        }
+
+        BytesLeft.QuadPart -= ONEMEG;
+        cout << (float)(DriveSize.QuadPart - BytesLeft.QuadPart) / DriveSize.QuadPart  * 100.0f << "%\n";
+    }
+
+    while (BytesLeft.QuadPart >= 512)
+    {
+        // read file and write to drive
+        if (!ReadFile(hFile, Buffer, 512, &Read, NULL))
+        {
+            cout << "Failed to read drive!\n";
+            return -1;
+        }
+
+        if (!WriteFile(hDrive, Buffer, 512, &Read, NULL))
         {
             cout << "Unable to update file!\n";
             return -1;
@@ -446,8 +814,18 @@ int GetMenuChoice(int numChoices, int defaultSelection, char *szChoices, ...)
 
     COORD cur = { 0, 0 };
 
-    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    bool usingPrompt = false;
+    
+    ClearScreen();
 
+    if (promptLines > 0)
+    {
+        usingPrompt = true;
+        cur.Y = promptLines;
+    }       
+   
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    
     bool done = false;
     while (!done)
     {
@@ -489,6 +867,27 @@ int GetMenuChoice(int numChoices, int defaultSelection, char *szChoices, ...)
             selection = selection % numChoices;
         }
 
+        if (key == '0')
+            return 0;
+        if (key == '1')
+            return 1;
+        if (key == '2')
+            return 2;
+        if (key == '3')
+            return 3;
+        if (key == '4')
+            return 4;
+        if (key == '5')
+            return 5;
+        if (key == '6')
+            return 6;
+        if (key == '7')
+            return 7;
+        if (key == '8')
+            return 8;
+        if (key == '9')
+            return 9;
+
         if (key == 27)
         {
             selection = defaultSelection;
@@ -526,9 +925,37 @@ int GetMenuChoice(int numChoices, int defaultSelection, char *szChoices, ...)
     return i;
 }
 
+HANDLE OpenDrive(char driveLetter, PULARGE_INTEGER pDriveSize)
+{
+    char pathName[7] = "\\\\.\\C:";
+    pathName[4] = driveLetter;
+
+    char driveName[5] = "R:\\";
+    driveName[0] = driveLetter;
+
+    cout << "About to open " << pathName << "\nSelect a file to save image to:" << endl;
+
+    // open up drive whatever:
+    HANDLE hDrive = CreateFileA(pathName, GENERIC_READ | GENERIC_WRITE, FILE_SHARE_READ | FILE_SHARE_WRITE, NULL, OPEN_EXISTING, 0, NULL);
+
+    if (hDrive == INVALID_HANDLE_VALUE)
+    {
+        cout << "Couldn't open drive\n";
+        return INVALID_HANDLE_VALUE;
+    }
+
+    GetDiskFreeSpaceExA(driveName,
+                        NULL,
+                        pDriveSize,
+                        NULL);
+    return hDrive;
+}
+
 int main()
 {
-    int choice  = GetMenuChoice(3, 0, "Dump Drive", "Compare two files", "Exit");
+    int choice = GetMenuChoice(5, 0, "Dump Drive", "Compare two files", "Compare two drives", "Write image to drive", /*"!Wipe Drive completely!",*/ "Exit");
+
+    bool comparingDrives = false;
 
     if (choice == 0)
     {
@@ -538,85 +965,131 @@ int main()
 
     if (choice == 2)
     {
+        comparingDrives = true;
+    }
+
+    if (choice == 3)
+    {
+        WriteImageToDrive();
         return 0;
     }
 
-    OPENFILENAME ofn, ofn2;
-
-    WCHAR szFileName[MAX_PATH] = L"";
-    WCHAR szFileName2[MAX_PATH] = L"";
-
-    cout << "Open first file...\n";
-
-    ZeroMemory(&ofn, sizeof(ofn));
-
-    ofn.lStructSize = sizeof(ofn);
-    ofn.hwndOwner = NULL;
-    ofn.lpstrFilter = L"Bin Files (*.bin)\0*.bin\0All Files (*.*)\0*.*\0";
-    ofn.lpstrFile = szFileName;
-    ofn.nMaxFile = MAX_PATH;
-    ofn.Flags = OFN_EXPLORER | OFN_FILEMUSTEXIST | OFN_HIDEREADONLY;
-    ofn.lpstrDefExt = (LPCWSTR)L"bin";
-
-    if (!GetOpenFileName(&ofn))
+    /*if (choice == 4)
     {
-        cout << "User cancelled save dialog\n";
+        WipeDrive();
+        return 0;
+    }*/
+
+    if (choice == 4)
+    {
         return 0;
     }
 
-    HANDLE hBefore = CreateFile(ofn.lpstrFile, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_ALWAYS, 0, NULL);
-    //HANDLE hBefore = CreateFile(L"beforefile4.bin", GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_ALWAYS, 0, NULL);
-    if (hBefore == INVALID_HANDLE_VALUE)
+    HANDLE hBefore, hAfter;
+    ULARGE_INTEGER FileSize1, FileSize2;
+
+    if (!comparingDrives)
     {
-        cout << "Couldn't create ";
-        wcout << ofn.lpstrFile << L"\n";
-        return -1;
-    }
+        OPENFILENAME ofn, ofn2;
+
+        WCHAR szFileName[MAX_PATH] = L"";
+        WCHAR szFileName2[MAX_PATH] = L"";
+
+        cout << "Open first file...\n";
+
+        ZeroMemory(&ofn, sizeof(ofn));
+
+        ofn.lStructSize = sizeof(ofn);
+        ofn.hwndOwner = NULL;
+        ofn.lpstrFilter = L"Bin Files (*.bin)\0*.bin\0All Files (*.*)\0*.*\0";
+        ofn.lpstrFile = szFileName;
+        ofn.nMaxFile = MAX_PATH;
+        ofn.Flags = OFN_EXPLORER | OFN_FILEMUSTEXIST | OFN_HIDEREADONLY;
+        ofn.lpstrDefExt = (LPCWSTR)L"bin";
+
+        if (!GetOpenFileName(&ofn))
+        {
+            cout << "User cancelled save dialog\n";
+            return 0;
+        }
+
+        HANDLE hBefore = CreateFile(ofn.lpstrFile, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_ALWAYS, 0, NULL);
+        if (hBefore == INVALID_HANDLE_VALUE)
+        {
+            cout << "Couldn't create ";
+            wcout << ofn.lpstrFile << L"\n";
+            return -1;
+        }
+
+        cout << "Open 2nd file...\n";
+
+        ZeroMemory(&ofn2, sizeof(ofn2));
+        //ZeroMemory(szFileName,(2 * MAX_PATH));
+
+        ofn2.lStructSize = sizeof(ofn2);
+        ofn2.hwndOwner = NULL;
+        ofn2.lpstrFilter = L"Bin Files (*.bin)\0*.bin\0All Files (*.*)\0*.*\0";
+        ofn2.lpstrFile = szFileName2;
+        ofn2.nMaxFile = MAX_PATH;
+        ofn2.Flags = OFN_EXPLORER | OFN_FILEMUSTEXIST | OFN_HIDEREADONLY;
+        ofn2.lpstrDefExt = (LPCWSTR)L"bin";
 
 
 
-    cout << "Open 2nd file...\n";
+        if (!GetOpenFileName(&ofn2))
+        {
+            cout << "User cancelled save dialog\n";
+            return 0;
+        }
 
-    ZeroMemory(&ofn2, sizeof(ofn2));
-    //ZeroMemory(szFileName,(2 * MAX_PATH));
+        HANDLE hAfter = CreateFile(ofn2.lpstrFile, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_ALWAYS, 0, NULL);
+        if (hAfter == INVALID_HANDLE_VALUE)
+        {
+            cout << "Couldn't create after file";
+            wcout << ofn2.lpstrFile << L"\n";
+            return -1;
+        }
 
-    ofn2.lStructSize = sizeof(ofn2);
-    ofn2.hwndOwner = NULL;
-    ofn2.lpstrFilter = L"Bin Files (*.bin)\0*.bin\0All Files (*.*)\0*.*\0";
-    ofn2.lpstrFile = szFileName2;
-    ofn2.nMaxFile = MAX_PATH;
-    ofn2.Flags = OFN_EXPLORER | OFN_FILEMUSTEXIST | OFN_HIDEREADONLY;
-    ofn2.lpstrDefExt = (LPCWSTR)L"bin";
+        GetFileSizeEx(hBefore, (LARGE_INTEGER *)(&FileSize1));
+        GetFileSizeEx(hAfter, (LARGE_INTEGER *)(&FileSize2));
 
-
-
-    if (!GetOpenFileName(&ofn2))
-    {
-        cout << "User cancelled save dialog\n";
-        return 0;
-    }
-
-    HANDLE hAfter = CreateFile(ofn2.lpstrFile, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_ALWAYS, 0, NULL);
-    //HANDLE hAfter = CreateFile(L"afterfile4.bin", GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_ALWAYS, 0, NULL);
-    if (hAfter == INVALID_HANDLE_VALUE)
-    {
-        cout << "Couldn't create after file";
-        wcout << ofn2.lpstrFile << L"\n";
-        return -1;
-    }
-
-    LARGE_INTEGER FileSize1, FileSize2;
-    GetFileSizeEx(hBefore, &FileSize1);
-    GetFileSizeEx(hAfter, &FileSize2);
-
-    if (FileSize1.QuadPart != FileSize2.QuadPart)
-    {
-        cout << "Files not equal in size!\n";
-        return -1;
+        if (FileSize1.QuadPart != FileSize2.QuadPart)
+        {
+            cout << "Files not equal in size!\n";
+            return -1;
+        }
+        else
+            cout << "Yes these files totally match in size\n";
     }
     else
-        cout << "Yes these files totally match in size\n";
+    {
+        // comparing two drives directly
+        cout << "Enter letter of the first drive: ";
 
+        char driveLetter;
+        cin >> driveLetter;
+
+        // open up drive whatever:
+        LARGE_INTEGER Drive1Size, Drive2Size;
+        hBefore = OpenDrive(driveLetter, &FileSize1);
+        if (hBefore == INVALID_HANDLE_VALUE)
+        {
+            cout << "Couldn't open drive " << driveLetter << endl;
+            return -1;
+        }
+
+        cout << "Enter letter of the second drive: ";
+
+        cin >> driveLetter;
+
+        // open up drive whatever:
+        hAfter = OpenDrive(driveLetter, &FileSize2);
+        if (hAfter == INVALID_HANDLE_VALUE)
+        {
+            cout << "Couldn't open drive " << driveLetter << endl;
+            return -1;
+        }
+    }
 
 
     // read the mft from the second file
@@ -629,7 +1102,7 @@ int main()
     cout << "Size of mft entry struct: " << sizeof(MFTENTRY) << "\n";
     if (!ReadFile(hAfter, &bootFile, 512, &Read, NULL))
     {
-        cout << "Unable to read from drive. Error code: " << GetLastError() << "\n";
+        cout << "Unable to read boot file from second drive or image. Error code: " << GetLastError() << "\n";
         CloseHandle(hAfter);
         return -1;
     }
@@ -760,9 +1233,9 @@ int main()
         {
             bool sectorChanged = false;
             htmlfile << std::setw(4) << std::dec << Offset.QuadPart;
-            if (Offset.QuadPart >= 8858 && Offset.QuadPart <= 12953)
+            /*if (Offset.QuadPart >= 8858 && Offset.QuadPart <= 12953)
                 htmlfile << "&nbsp[$LogFile]";
-            else
+            else*/
             {
                 /*if (Offset.QuadPart >= 12970 && Offset.QuadPart <= 13065)
                     htmlfile << "&nbsp;[$Mft]";
