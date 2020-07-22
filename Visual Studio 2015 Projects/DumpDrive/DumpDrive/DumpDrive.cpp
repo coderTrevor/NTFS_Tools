@@ -17,6 +17,9 @@ int GetMenuChoice(int numChoices, int defaultSelection, char *szChoices, ...);
 char *menuPrompt = NULL;
 int promptLines = 0;
 
+void ViewDiskInfo();
+HANDLE OpenDrive(char driveLetter, PULARGE_INTEGER pDriveSize);
+
 // Thank you cplusplus.com
 void ClearScreen()
 {
@@ -720,6 +723,52 @@ void TypeToAttrib(ULONG AttrType)
     htmlfile << "&nbsp;&nbsp;&nbsp;&nbsp;";
 }
 
+// For testing IOCTL_DISK_GET_DRIVE_GEOMETRY_EX
+void ViewDiskInfo()
+{
+    cout << "Enter letter of drive you'd like to inspect: ";
+
+    char letter;
+    cin >> letter;
+
+    ULARGE_INTEGER driveSize;
+
+    // open the drive
+    HANDLE hDrive = OpenDrive(letter, &driveSize);
+    if (hDrive == INVALID_HANDLE_VALUE)
+    {
+        cout << "Failed to open " << letter << " drive!\n";
+        return;
+    }
+
+    DISK_GEOMETRY_EX geometryEx;
+    DWORD bytesReturned;
+
+    // Issue the IOCTL
+    if (!DeviceIoControl(
+        hDrive,                 // handle to device
+        IOCTL_DISK_GET_DRIVE_GEOMETRY_EX, // dwIoControlCode
+        NULL,                             // lpInBuffer
+        0,                                // nInBufferSize
+        (LPVOID)&geometryEx,             // output buffer
+        sizeof(geometryEx),           // size of output buffer
+        &bytesReturned,        // number of bytes returned
+        NULL       // OVERLAPPED structure
+    ))
+    {
+        cout << "DeviceIoControl failed.\n";
+        return;
+    }
+    //else
+   //     cout << "success\n";
+
+    cout << "Drive " << letter << " has " << geometryEx.DiskSize.QuadPart << " bytes.\n ";
+    cout << geometryEx.Geometry.Cylinders.QuadPart << " cyl " << geometryEx.Geometry.TracksPerCylinder << " tracks per cyl\n "
+        << geometryEx.Geometry.SectorsPerTrack << " sectors per track " << geometryEx.Geometry.BytesPerSector << " bytes per sector\n";
+
+    AnyKey();
+}
+
 /*void VcnToMFTIndex(ULONGLONG Vcn)
 {
 	// hacky hacky
@@ -953,7 +1002,7 @@ HANDLE OpenDrive(char driveLetter, PULARGE_INTEGER pDriveSize)
 
 int main()
 {
-    int choice = GetMenuChoice(5, 0, "Dump Drive", "Compare two files", "Compare two drives", "Write image to drive", /*"!Wipe Drive completely!",*/ "Exit");
+    int choice = GetMenuChoice(6, 0, "Dump Drive", "Compare two files", "Compare two drives", "Write image to drive", /*"!Wipe Drive completely!",*/ "View disk info", "Exit");
 
     bool comparingDrives = false;
 
@@ -981,6 +1030,12 @@ int main()
     }*/
 
     if (choice == 4)
+    {
+        ViewDiskInfo();
+        return 0;
+    }
+
+    if (choice == 5)
     {
         return 0;
     }
